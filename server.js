@@ -56,7 +56,8 @@ wss.on('connection', function connection(ws) {
 });
 
 // A porta em que o servidor esta rodar
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+
 
 // Inicio do servidor e a URL no terminal
 server.listen(PORT, () => {
