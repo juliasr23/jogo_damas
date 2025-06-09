@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Damas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Jogo de Damas</h1>
+
+    <div class="container">
+        <div class="player-info" id="player1">
+            <h2>Jogador 1</h2>
+            <p>Placar: <span id="score1">0</span></p>
+            <p>Vez: <span id="currentPlayer">Sim</span></p>
+        </div>
+        <div class="board" id="board"></div>
+        <div class="player-info" id="player2">
+            <h2>Jogador 2</h2>
+            <p>Placar: <span id="score2">0</span></p>
+            <p>Vez: <span id="currentPlayerPlayer2">Não</span></p>
+        </div>
+    </div>
+
+    <button onclick="resetGame()">Reiniciar Jogo</button>
+    <script src="script.js"></script>
+</body>
+</html>
